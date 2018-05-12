@@ -9,7 +9,7 @@ namespace EMS.Api.Repository
         protected IDbConnection DbConnection;
         public BaseRepository()
         {
-            string connectionString = @"Data Source=(localdb)\ProjectsV13;Initial Catalog=DemoEMS;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            string connectionString = @"Data Source=(localdb)\ProjectsV13;Initial Catalog=DemoEMS;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
             DbConnection = new SqlConnection(connectionString);
         }
